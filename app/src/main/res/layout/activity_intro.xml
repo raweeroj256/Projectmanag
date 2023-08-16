@@ -2,14 +2,23 @@
 <!--TODO (Step 4: Design the intro screen layout as per our requirement.)-->
 <!--START-->
 <!--The values for the drawable items, dimen, string and color values are added in their respective folders and files.-->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/intro_background"
     android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context=".activities.IntroActivity">
+
+
+
+
 
     <TextView
         android:id="@+id/tv_app_name_intro"
@@ -82,4 +91,7 @@
         android:text="@string/sign_up"
         android:textColor="@color/white"
         android:textSize="@dimen/btn_text_size" />
+
+
 </LinearLayout>
+</ScrollView>
